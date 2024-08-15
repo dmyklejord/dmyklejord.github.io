@@ -3,42 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ServiceGPT</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Widget JavaScript bundle -->
-    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+    <title>Search Widget Demo</title>
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-header">
-            <h1>ServiceGPT</h1>
-        </div>
-        <div class="chat-intro">
-            <p>Hello! I'm Brett, your service agent. Ask me anything about the machine and I'll look it up in the owner's manual for you.</p>
-        </div>
-        <div class="chat-history" id="chat-history"></div>
-        <div class="loading-indicator" id="loading-indicator">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-        <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Type your message here...">
-            <button id="send-button">Send</button>
-            <button id="clear-button">Clear Conversation</button>
-        </div>
-    </div>
+    <h1>Search Widget Demo</h1>
+    
+    <!-- Input element that opens the widget on click -->
+    <input placeholder="Search here" id="searchWidgetTrigger" />
+
+    <!-- Widget JavaScript bundle -->
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
 
     <!-- Search widget element -->
     <gen-search-widget
       configId="e50eba44-f5fc-4ba5-8f22-47eb63076493"
-      triggerId="searchWidgetTrigger"
-      options='{"embedUrl": true}'
-    ></gen-search-widget>
-    
-    <!-- Hidden trigger element -->
-    <input type="hidden" id="searchWidgetTrigger">
-
-    <script src="script.js"></script>
+      location="us"
+      triggerId="searchWidgetTrigger">
+    </gen-search-widget>
 </body>
 </html>
