@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Widget Demo Title</title>
+    <title>AI-Powered Search Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        .search-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .search-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Search Widget Demo</h1>
+    <h1>AI-Powered Search Demo</h1>
+    <p>
+        Experience the power of AI-driven search. This demo uses Google Cloud AI 
+        to provide intelligent and context-aware search results. Click the button 
+        below to start exploring!
+    </p>
     
-    <!-- Input element that opens the widget on click -->
-    <input placeholder="Search here" id="searchWidgetTrigger" />
+    <!-- Button that opens the widget on click -->
+    <button id="searchWidgetTrigger" class="search-button">Start Searching</button>
 
     <!-- Widget JavaScript bundle -->
     <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
