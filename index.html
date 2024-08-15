@@ -34,16 +34,31 @@
         .search-button:hover {
             background-color: #2980b9;
         }
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
     <h1>CatGPT</h1>
     <p>
-        Hello, I'm CatGPT, a helpful service agent. I'm an expert on 2011 D6K Operator Manuals. You can ask me anything! <br> Here are a couple examples: <br> Can I stop the engine right after running it hard? <br> Why does this button make my blade move around?
+        Hello, I'm CatGPT, a helpful service agent. I'm an expert on 2011 D6K Operator Manuals. You can ask me anything! 
+    <br> <b> This is a very early internal beta using public information. </b>
     </p>
-    
+
+    Here are a couple examples:
+    <br>
+    <ul>
+      <li>Can I stop the engine right after running it hard?</li>
+      <li>Why does this button make my blade move around?</li>
+    </ul>
+    <br>
+    <br>
     <!-- Button that opens the widget on click -->
-    <button id="searchWidgetTrigger" class="search-button">Start Searching</button>
+    <button id="searchWidgetTrigger" class="search-button">Ask Away!</button>
 
     <!-- Widget JavaScript bundle -->
     <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
