@@ -36,10 +36,19 @@
 <body>
     <h1>D6K Manual</h1>
     <p>I'm CatGPT, and I can help you with the D6K operator manual!</p>
-    <button class="search-button">Ask the manual</button>
+    <!-- Search button for the D6K manual -->
+    <button id="searchWidgetTrigger" class="search-button">Ask the manual</button>
 
     <br><br>
     <img src="/d6k_qr_code.png" alt="QR Code for D6K Manual" width="200">
     <br><br>
+
+    <!-- Gen Search Widget for D6K -->
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+    <gen-search-widget
+      configId="e50eba44-f5fc-4ba5-8f22-47eb63076493"
+      location="us"
+      triggerId="searchWidgetTrigger">
+    </gen-search-widget>
 </body>
 </html>

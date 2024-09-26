@@ -36,10 +36,19 @@
 <body>
     <h1>349DL Manual</h1>
     <p>I'm CatGPT, and I can help you with the 349DL operator manual!</p>
-    <button class="search-button">Ask the manual</button>
+    <!-- Search button for the 349DL manual -->
+    <button id="searchWidgetTrigger" class="search-button">Ask the manual</button>
 
     <br><br>
     <img src="/349dl_qr_code.png" alt="QR Code for 349DL Manual" width="200">
     <br><br>
+
+    <!-- Gen Search Widget for 349DL -->
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+    <gen-search-widget
+      configId="7273cdd3-c674-41b0-b9e3-fa1fd5e20dd6"
+      location="us"
+      triggerId="searchWidgetTrigger">
+    </gen-search-widget>
 </body>
 </html>
