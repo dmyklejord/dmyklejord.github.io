@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatGPT: AI-Powered Search Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        .search-button {
+            background-color: #FFD700; /* Yellow color */
+            color: #000000; /* Black text for better contrast on yellow */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .search-button:hover {
+            background-color: #FFC700; /* Slightly darker yellow on hover */
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CatGPT</h1>
+    <p>
+        Hello, I'm CatGPT, a helpful service agent. I'm an expert on 2011 D6K Operator Manuals. You can ask me anything about the manual! 
+    <br> <b> This is a very early  beta using public information. </b>
+    </p>
+
+    Here are a couple examples:
+    <br>
+    <ul>
+      <li>Can I stop the engine right after running it hard?</li>
+      <li>Why does this button make my blade move around?</li>
+    </ul>
+    <br>
+    <br>
+    <!-- Button that opens the widget on click -->
+    <button id="searchWidgetTrigger" class="search-button">Ask</button>
+
+      <!-- QR Code -->
+      <br><br><br>
+      <div class="qr-code">
+        <img src="qr_code.png" alt="QR Code for dmyklejord.github.io" width="200">
+        <br>
+       (The QR code takes you to this same page).
+      </div>
+      <div>
+      <br><br>
+      Contact: Duane Myklejord
+      </div>
+
+    <!-- Widget JavaScript bundle -->
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+    <!-- Search widget element -->
+    <gen-search-widget
+      configId="e50eba44-f5fc-4ba5-8f22-47eb63076493"
+      location="us"
+      triggerId="searchWidgetTrigger">
+    </gen-search-widget>
+</body>
+</html>
